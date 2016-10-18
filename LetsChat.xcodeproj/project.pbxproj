@@ -12,6 +12,7 @@
 		9A0E99151DB6929A00BA8DC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0E99131DB6929A00BA8DC2 /* Main.storyboard */; };
 		9A0E99171DB6929A00BA8DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0E99161DB6929A00BA8DC2 /* Assets.xcassets */; };
 		9A0E991A1DB6929A00BA8DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0E99181DB6929A00BA8DC2 /* LaunchScreen.storyboard */; };
+		9A0E99231DB69E5000BA8DC2 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E99221DB69E5000BA8DC2 /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9A0E99161DB6929A00BA8DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A0E99191DB6929A00BA8DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A0E991B1DB6929A00BA8DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A0E99221DB69E5000BA8DC2 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		9A0E990E1DB6929A00BA8DC2 /* LetsChat */ = {
 			isa = PBXGroup;
 			children = (
+				9A0E99211DB69E3400BA8DC2 /* Controller */,
 				9A0E990F1DB6929A00BA8DC2 /* AppDelegate.swift */,
-				9A0E99111DB6929A00BA8DC2 /* ViewController.swift */,
 				9A0E99131DB6929A00BA8DC2 /* Main.storyboard */,
 				9A0E99161DB6929A00BA8DC2 /* Assets.xcassets */,
 				9A0E99181DB6929A00BA8DC2 /* LaunchScreen.storyboard */,
 				9A0E991B1DB6929A00BA8DC2 /* Info.plist */,
 			);
 			path = LetsChat;
+			sourceTree = "<group>";
+		};
+		9A0E99211DB69E3400BA8DC2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9A0E99221DB69E5000BA8DC2 /* LoginController.swift */,
+				9A0E99111DB6929A00BA8DC2 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A0E99121DB6929A00BA8DC2 /* ViewController.swift in Sources */,
+				9A0E99231DB69E5000BA8DC2 /* LoginController.swift in Sources */,
 				9A0E99101DB6929A00BA8DC2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +300,7 @@
 				9A0E99201DB6929A00BA8DC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
