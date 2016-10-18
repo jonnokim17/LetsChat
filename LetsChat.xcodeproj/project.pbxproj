@@ -13,9 +13,12 @@
 		9A0E99171DB6929A00BA8DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0E99161DB6929A00BA8DC2 /* Assets.xcassets */; };
 		9A0E991A1DB6929A00BA8DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0E99181DB6929A00BA8DC2 /* LaunchScreen.storyboard */; };
 		9A0E99231DB69E5000BA8DC2 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E99221DB69E5000BA8DC2 /* LoginController.swift */; };
+		9A15247B1DB6B69900D18CF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A15247A1DB6B69900D18CF5 /* GoogleService-Info.plist */; };
+		E83555E187B6280D833C4F7E /* Pods_LetsChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD25AF8617A9BE45C91800F /* Pods_LetsChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B0EF2D7703630F601B5F631 /* Pods-LetsChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LetsChat/Pods-LetsChat.debug.xcconfig"; sourceTree = "<group>"; };
 		9A0E990C1DB6929A00BA8DC2 /* LetsChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0E990F1DB6929A00BA8DC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A0E99111DB6929A00BA8DC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		9A0E99191DB6929A00BA8DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A0E991B1DB6929A00BA8DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A0E99221DB69E5000BA8DC2 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		9A15247A1DB6B69900D18CF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ECD25AF8617A9BE45C91800F /* Pods_LetsChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6295FA2065D3E707E8DA49F /* Pods-LetsChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-LetsChat/Pods-LetsChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E83555E187B6280D833C4F7E /* Pods_LetsChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AA24F567DA5C0E02BB5859D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B0EF2D7703630F601B5F631 /* Pods-LetsChat.debug.xcconfig */,
+				F6295FA2065D3E707E8DA49F /* Pods-LetsChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9A0E99031DB6929A00BA8DC2 = {
 			isa = PBXGroup;
 			children = (
 				9A0E990E1DB6929A00BA8DC2 /* LetsChat */,
 				9A0E990D1DB6929A00BA8DC2 /* Products */,
+				3AA24F567DA5C0E02BB5859D /* Pods */,
+				9D35A7B0D2A2799779F40712 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +80,7 @@
 				9A0E99161DB6929A00BA8DC2 /* Assets.xcassets */,
 				9A0E99181DB6929A00BA8DC2 /* LaunchScreen.storyboard */,
 				9A0E991B1DB6929A00BA8DC2 /* Info.plist */,
+				9A15247A1DB6B69900D18CF5 /* GoogleService-Info.plist */,
 			);
 			path = LetsChat;
 			sourceTree = "<group>";
@@ -75,6 +94,14 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		9D35A7B0D2A2799779F40712 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECD25AF8617A9BE45C91800F /* Pods_LetsChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A0E991E1DB6929A00BA8DC2 /* Build configuration list for PBXNativeTarget "LetsChat" */;
 			buildPhases = (
+				5BFA199350B7FE2DD1F12F2E /* [CP] Check Pods Manifest.lock */,
 				9A0E99081DB6929A00BA8DC2 /* Sources */,
 				9A0E99091DB6929A00BA8DC2 /* Frameworks */,
 				9A0E990A1DB6929A00BA8DC2 /* Resources */,
+				97A4AED39B0964A55EDEA48D /* [CP] Embed Pods Frameworks */,
+				ED148A89ECDAEBED4F487569 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,12 +164,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A0E991A1DB6929A00BA8DC2 /* LaunchScreen.storyboard in Resources */,
+				9A15247B1DB6B69900D18CF5 /* GoogleService-Info.plist in Resources */,
 				9A0E99171DB6929A00BA8DC2 /* Assets.xcassets in Resources */,
 				9A0E99151DB6929A00BA8DC2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BFA199350B7FE2DD1F12F2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97A4AED39B0964A55EDEA48D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LetsChat/Pods-LetsChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED148A89ECDAEBED4F487569 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LetsChat/Pods-LetsChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A0E99081DB6929A00BA8DC2 /* Sources */ = {
@@ -261,6 +340,7 @@
 		};
 		9A0E991F1DB6929A00BA8DC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B0EF2D7703630F601B5F631 /* Pods-LetsChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LetsChat/Info.plist;
@@ -272,6 +352,7 @@
 		};
 		9A0E99201DB6929A00BA8DC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6295FA2065D3E707E8DA49F /* Pods-LetsChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LetsChat/Info.plist;
