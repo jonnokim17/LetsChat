@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9A0E99101DB6929A00BA8DC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E990F1DB6929A00BA8DC2 /* AppDelegate.swift */; };
-		9A0E99121DB6929A00BA8DC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E99111DB6929A00BA8DC2 /* ViewController.swift */; };
+		9A0E99121DB6929A00BA8DC2 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E99111DB6929A00BA8DC2 /* MessagesController.swift */; };
 		9A0E99151DB6929A00BA8DC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0E99131DB6929A00BA8DC2 /* Main.storyboard */; };
 		9A0E99171DB6929A00BA8DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0E99161DB6929A00BA8DC2 /* Assets.xcassets */; };
 		9A0E991A1DB6929A00BA8DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0E99181DB6929A00BA8DC2 /* LaunchScreen.storyboard */; };
 		9A0E99231DB69E5000BA8DC2 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E99221DB69E5000BA8DC2 /* LoginController.swift */; };
 		9A15247B1DB6B69900D18CF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A15247A1DB6B69900D18CF5 /* GoogleService-Info.plist */; };
+		9A57E9FD1DCBAA2300747795 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A57E9FC1DCBAA2300747795 /* NewMessageController.swift */; };
+		9A8D87FF1DCCFE1B004C9698 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D87FE1DCCFE1B004C9698 /* User.swift */; };
 		E83555E187B6280D833C4F7E /* Pods_LetsChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD25AF8617A9BE45C91800F /* Pods_LetsChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,13 +23,15 @@
 		4B0EF2D7703630F601B5F631 /* Pods-LetsChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LetsChat/Pods-LetsChat.debug.xcconfig"; sourceTree = "<group>"; };
 		9A0E990C1DB6929A00BA8DC2 /* LetsChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0E990F1DB6929A00BA8DC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9A0E99111DB6929A00BA8DC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A0E99111DB6929A00BA8DC2 /* MessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
 		9A0E99141DB6929A00BA8DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A0E99161DB6929A00BA8DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A0E99191DB6929A00BA8DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A0E991B1DB6929A00BA8DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A0E99221DB69E5000BA8DC2 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		9A15247A1DB6B69900D18CF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9A57E9FC1DCBAA2300747795 /* NewMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		9A8D87FE1DCCFE1B004C9698 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ECD25AF8617A9BE45C91800F /* Pods_LetsChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6295FA2065D3E707E8DA49F /* Pods-LetsChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-LetsChat/Pods-LetsChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +78,7 @@
 		9A0E990E1DB6929A00BA8DC2 /* LetsChat */ = {
 			isa = PBXGroup;
 			children = (
+				9A8D87FD1DCCFE0F004C9698 /* Model */,
 				9A0E99211DB69E3400BA8DC2 /* Controller */,
 				9A0E990F1DB6929A00BA8DC2 /* AppDelegate.swift */,
 				9A0E99131DB6929A00BA8DC2 /* Main.storyboard */,
@@ -89,9 +94,18 @@
 			isa = PBXGroup;
 			children = (
 				9A0E99221DB69E5000BA8DC2 /* LoginController.swift */,
-				9A0E99111DB6929A00BA8DC2 /* ViewController.swift */,
+				9A0E99111DB6929A00BA8DC2 /* MessagesController.swift */,
+				9A57E9FC1DCBAA2300747795 /* NewMessageController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		9A8D87FD1DCCFE0F004C9698 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A8D87FE1DCCFE1B004C9698 /* User.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		9D35A7B0D2A2799779F40712 /* Frameworks */ = {
@@ -226,8 +240,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A0E99121DB6929A00BA8DC2 /* ViewController.swift in Sources */,
+				9A57E9FD1DCBAA2300747795 /* NewMessageController.swift in Sources */,
+				9A0E99121DB6929A00BA8DC2 /* MessagesController.swift in Sources */,
 				9A0E99231DB69E5000BA8DC2 /* LoginController.swift in Sources */,
+				9A8D87FF1DCCFE1B004C9698 /* User.swift in Sources */,
 				9A0E99101DB6929A00BA8DC2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
